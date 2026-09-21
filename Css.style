@@ -1,1 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: Georgia, "Times New Roman", serif;
+    background-color: #f7f0df;
+    color: #333;
+}
+
+/* Navigation Bar */
+.navbar {
+    background-color: #263a5b;
+    color: #f5d77a;
+    padding: 20px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar h1 {
+    font-size: 28px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links a:hover {
+    color: #f5d77a;
+}
+
+/* Hero Section */
+.Hero {
+    background: linear-gradient(135deg, #263a5b, #536b8e);
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.Hero-content h2 {
+    font-size: 40px;
+    color: #f5d77a;
+    margin-bottom: 15px;
+}
+
+.Hero-content p {
+    font-size: 18px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.Hero-content button {
+    background-color: #c69b3c;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.Hero-content button:hover {
+    background-color: #a77d2c;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding: 60px 10%;
+    background-color: #fffaf0;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: 5px solid #c69b3c;
+}
+
+.about-content {
+    flex: 1;
+}
+
+.about-content h2 {
+    color: #263a5b;
+    margin-bottom: 15px;
+}
+
+.about-content p {
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+/* Stories Section */
+.stories,
+.Stories {
+    padding: 60px 8%;
+    text-align: center;
+    background-color: #f7f0df;
+}
+
+.stories h2 {
+    color: #263a5b;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    margin-bottom: 30px;
+    color: #665f55;
+}
+
+/* Story Container */
+.story-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Story Cards */
+.story-card {
+    background-color: #fffaf0;
+    width: 350px;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(38, 58, 91, 0.2);
+    margin: 20px auto;
+    text-align: left;
+    border: 1px solid #dfc98c;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(38, 58, 91, 0.3);
+}
+
+.story-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.story-card h3 {
+    color: #263a5b;
+    font-size: 23px;
+    margin: 15px 0 10px;
+}
+
+.story-card p {
+    line-height: 1.6;
+    font-size: 15px;
+    margin-bottom: 20px;
+}
+
+.story-card button {
+    background-color: #263a5b;
+    color: #f5d77a;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.story-card button:hover {
+    background-color: #c69b3c;
+    color: white;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Hero-content h2 {
+        font-size: 30px;
+    }
+
+    .story-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .story-card {
+        width: 90%;
+    }
+}
